@@ -33,6 +33,7 @@ function analyze() {
       console.log('hahahhaha')
       if (`Result = ${response['result']}` == 'Result = black') {
           el('result-details').innerHTML = '饼状图是一种很好的图形'
+          el('result-img').src = 'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3404661339,4106564411&fm=26&gp=0.jpg'
       }
       el("result-label").innerHTML = `Result = ${response["result"]}`;
     }
