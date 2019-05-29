@@ -29,6 +29,11 @@ function analyze() {
   xhr.onload = function(e) {
     if (this.readyState === 4) {
       var response = JSON.parse(e.target.responseText);
+      console.log(`Result = ${response['result']}`)
+      console.log('hahahhaha')
+      if (`Result = ${response['result']}` == 'Result = black') {
+          el('result-details').innerHTML = '饼状图是一种很好的图形'
+      }
       el("result-label").innerHTML = `Result = ${response["result"]}`;
     }
     el("analyze-button").innerHTML = "Analyze";
